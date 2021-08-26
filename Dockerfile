@@ -1,4 +1,4 @@
-FROM node:14
+FROM node:alpine
 
 RUN mkdir -p /usr/src/app
 
@@ -12,4 +12,4 @@ COPY . .
 
 EXPOSE 9000
 
-CMD [ "npm", "run", "dev" ]
+CMD [ "npm", "dev" ]
